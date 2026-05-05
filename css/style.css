@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+html, body{
+    height: 100%;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    background-image: url(../assets/img/bg-coffee.png);
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.logo{
+    width: 160px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span{
+    font-size: 15px;
+    font-weight: 200;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 80px;
+    background-color: rgba(30, 12, 4, 0.85);
+    border-bottom: 2px solid #7A4E2D;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 36px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #C49A6C;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+nav ul li a.active{
+    color: #F5E6D3;
+    font-weight: bold;
+    border-bottom: 1px solid #C49A6C;
+    padding-bottom: 2px;
+}
+
+nav ul li a:hover{
+    color: #F5E6D3;
+}
+
+.btn-reservar{
+    position: relative;
+    right: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #C49A6C;
+    letter-spacing: 3px;
+    border: 2px solid #7A4E2D;
+    padding: 8px 20px;
+    border-radius: 8px;
+}
+
+.btn-reservar:hover{
+    color: #F5E6D3;
+    border-color: #C49A6C;
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    padding: 60px;
+}
+
+.hero-content h1{
+    font-size: 52px;
+    color: #3B1F0A;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    font-family: Georgia, serif;
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: #5C3317;
+    margin-bottom: 32px;
+}
+
+.btn-ver-menu{
+    display: inline-block;
+    background-color: #3B1F0A;
+    color: #F5E6D3;
+    text-decoration: none;
+    padding: 14px 36px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.btn-ver-menu:hover{
+    background: #3B1F0A;
+    background: linear-gradient(90deg, rgba(59, 31, 10, 1) 0%, rgba(133, 83, 45, 1) 50%, rgba(59, 31, 10, 1) 100%);
+    outline: 2px solid #9e6a43;
+    outline-offset: -4px;
+}
