@@ -143,6 +143,7 @@ nav ul li a:hover{
 #ambience{
     background-color: #1a0a00;
     margin-top: 80px;
+    margin: 0 2%;
 }
 
 .gallery-container{
@@ -196,6 +197,7 @@ nav ul li a:hover{
     border: 1px solid #E8D5B7;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+
 }
 
 .info-text-tag{
@@ -212,9 +214,11 @@ div.info-text h2{
 
 div.info-text p{
     color: #C1976A;
+    padding-right: 80px;
 }
 
 .info-btn-ver-menu{
+    white-space: nowrap;
     color: #C1976A;
     font-size: 20px;
     font-weight: 700;
@@ -474,4 +478,45 @@ div.info-text p{
     color: #5C3317;
     line-height: 1.8;
     font-style: italic;
+}
+
+@media (max-width: 950px) {
+    #differences .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        flex: unset; /* 👈 reseta o flex do card */
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 950px){
+    nav {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 16px 20px;
+        gap: 12px;
+    }
+
+    nav ul {
+        gap: 16px;
+    }
+
+    nav ul li a {
+        font-size: 17px;
+    }
+
+    .btn-reservar {
+        font-size: 17px;
+        padding: 6px 14px;
+        margin-right: 60px;
+    }
+}
+
+@media (max-width: 800px){
+    .btn-reservar{
+        margin-right: 10px;
+    }
 }
