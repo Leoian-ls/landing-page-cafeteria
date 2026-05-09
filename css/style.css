@@ -22,6 +22,16 @@ header{
     background-position: center;
 }
 
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px; /* era height: 80px fixo */
+    height: auto;
+    background-color: rgba(30, 12, 4, 0.85);
+    border-bottom: 2px solid #7A4E2D;
+}
+
 .logo{
     width: 160px;
     text-align: center;
@@ -36,15 +46,6 @@ header{
     font-weight: 200;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px;
-    height: 80px;
-    background-color: rgba(30, 12, 4, 0.85);
-    border-bottom: 2px solid #7A4E2D;
-}
 
 nav ul{
     list-style: none;
@@ -74,7 +75,15 @@ nav ul li a:hover{
     box-shadow: 0 8px 6px -8px rgba(255, 255, 255, 0.5);
 }
 
+.header-nav-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
 .btn-reservar{
+    align-self: center;
     text-decoration: none;
     font-size: 20px;
     font-weight: 700;
@@ -84,6 +93,7 @@ nav ul li a:hover{
     padding: 8px 20px;
     border-radius: 8px;
     transition: 0.3s ease;
+    
 }
 
 .btn-reservar:hover{
@@ -142,8 +152,7 @@ nav ul li a:hover{
 /* ===== GALLERY ===== */
 #ambience{
     background-color: #1a0a00;
-    margin-top: 80px;
-    margin: 0 2%;
+    margin: 10px 2%;
 }
 
 .gallery-container{
@@ -197,7 +206,6 @@ nav ul li a:hover{
     border: 1px solid #E8D5B7;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-
 }
 
 .info-text-tag{
@@ -241,7 +249,7 @@ div.info-text p{
     padding: 80px 40px;
 }
 
-#differences .container{
+#differences .diff-container{
     display: flex;
     gap: 40px;
     justify-content: center;
@@ -480,43 +488,102 @@ div.info-text p{
     font-style: italic;
 }
 
-@media (max-width: 950px) {
-    #differences .container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .card {
-        flex: unset; /* 👈 reseta o flex do card */
-        max-width: 100%;
-    }
-}
+/* ===== MEDIA QUERY ===== */
 
 @media (max-width: 950px){
-    nav {
+    nav{
         flex-wrap: wrap;
         height: auto;
         padding: 16px 20px;
         gap: 12px;
     }
 
-    nav ul {
+    nav ul{
         gap: 16px;
     }
 
-    nav ul li a {
-        font-size: 17px;
+    #differences .diff-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .btn-reservar {
-        font-size: 17px;
-        padding: 6px 14px;
-        margin-right: 60px;
+    .card{
+        flex: unset;
+        max-width: 100%;
     }
 }
 
 @media (max-width: 800px){
     .btn-reservar{
         margin-right: 10px;
+    }
+}
+
+@media (max-width: 750px){
+    .gallery-container{
+        height: auto;
+    }
+
+    .info-bar{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 30px 20px; 
+    }
+
+    div.info-text p{
+        padding-right: 0; 
+    }
+
+    .info-btn-ver-menu{
+        margin: 20px 0;
+    }
+
+    .test-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 630px){
+    nav ul li a{
+        font-size: 13px;
+    }
+
+    .btn-reservar{
+        font-size: 13px;
+        padding: 6px 14px;
+        margin-right: 60px;
+    }
+}
+
+@media (max-width: 560px){
+    nav{
+        flex-direction: column;
+    }
+
+    nav ul{
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 13px;
+    }
+
+    .btn-reservar{
+        margin: 0 auto;
+    }
+
+    .about-stats{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 470px){
+    #differences .diff-container{
+        grid-template-columns: 1fr;
+    }
+
+    .test-grid{
+        grid-template-columns: 1fr;
     }
 }
