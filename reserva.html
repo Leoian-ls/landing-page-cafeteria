@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Reserva — Coffee House</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/reserva.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="reserva-page">
+            <div class="btn-back-container">
+                <a href="index.html" class="btn-back">← Voltar ao site</a>
+            </div>
+
+            <div class="reserva-card">
+                <span class="reserva-tag">COFFEE HOUSE</span>
+                <h1>Fazer uma Reserva</h1>
+                <p>Preencha os campos abaixo e entraremos em contato para confirmar sua reserva.</p>
+
+                <form class="reserva-form">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" placeholder="Seu nome completo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="seu@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefone</label>
+                        <input type="tel" id="phone" placeholder="(00) 00000-0000">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Data</label>
+                            <input type="date" id="date">
+                        </div>
+
+                        <div class="form-group form-time">
+                            <label for="time">Horário</label>
+                            <input type="time" id="time">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="people">Número de Pessoas</label>
+                        <select id="people">
+                            <option value="">Selecione</option>
+                            <option value="1">1 pessoa</option>
+                            <option value="2">2 pessoas</option>
+                            <option value="3">3 pessoas</option>
+                            <option value="4">4 pessoas</option>
+                            <option value="5">5 ou mais pessoas</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="observations">Observações (opcional)</label>
+                        <textarea id="observations" rows="4" placeholder="Alguma preferência ou necessidade especial?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-send">Confirmar Reserva</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

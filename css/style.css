@@ -567,7 +567,7 @@ div.info-text p{
     border-color: #7A4E2D;
 }
 
-.btn-enviar{
+.btn-send{
     width: 100%;
     background: #3B1F0A;
     color: #F5E6D3;
@@ -581,7 +581,7 @@ div.info-text p{
     transition: 0.3s ease;
 }
 
-.btn-enviar:hover{
+.btn-send:hover{
     background: linear-gradient(90deg,
         rgba(59, 31, 10, 1) 0%,
         rgba(133, 83, 45, 1) 50%,
